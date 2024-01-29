@@ -68,9 +68,9 @@
             </thead>
             <tbody>
                 <tr th:each="student: ${students}">
-                    <td style="max-width: 150px; overflow: hidden; text-overflow: ellipsis;" th:text="${student.firstName}"></td>
-                    <td style="max-width: 150px; overflow: hidden; text-overflow: ellipsis;" th:text="${student.lastName}"></td>
-                    <td style="max-width: 150px; overflow: hidden; text-overflow: ellipsis;" th:text="${student.email}"></td>
+                    <td style="max-width: 100px; overflow: hidden; text-overflow: ellipsis;" th:text="${student.firstName}"></td>
+                    <td style="max-width: 100px; overflow: hidden; text-overflow: ellipsis;" th:text="${student.lastName}"></td>
+                    <td style="max-width: 100px; overflow: hidden; text-overflow: ellipsis;" th:text="${student.email}"></td>
 
                     <td>
                         <a th:href="@{/students/edit/{id}(id=${student.id})}" class="btn btn-primary">Update</a>
@@ -80,7 +80,10 @@
             </tbody>
         </table>
     </div>
-
+  <br><br><br><br><br>
+  <br><br><br><br><br>
+  <br><br><br><br><br>
+  
     <footer style="background-color: #201b1b; padding: 10px; text-align: center; color: white; position: fixed; bottom: 0; width: 100%;">
         <p>Developed By Kichu_ser</p>
     </footer>
